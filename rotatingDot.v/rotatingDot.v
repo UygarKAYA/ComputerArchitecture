@@ -8,7 +8,6 @@ module rotatingDot(clk, rst, dataOut);
 	
 	parameter COUNT = 22'h3F ;
 	
-	
 	always @(posedge clk) begin
 		counter <= #1 counterNext;
 		dataOut <= #1 dataOutNext;
@@ -28,5 +27,4 @@ module rotatingDot(clk, rst, dataOut);
 			counterNext = counter + 1;
 		end
 	end
-	
 endmodule
