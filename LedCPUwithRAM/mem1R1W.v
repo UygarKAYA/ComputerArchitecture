@@ -1,11 +1,5 @@
-module mem1R1W(
-		clk,
-		addrRd,
-		dataRd,
-		addrWr,
-		dataWr,
-		wrEn
-);
+module mem1R1W(clk, addrRd, dataRd, addrWr, dataWr, wrEn);
+
 input clk;
 input wrEn;
 input [7:0] addrRd;
@@ -26,4 +20,3 @@ always@(posedge clk) begin
 end
 
 endmodule
-
